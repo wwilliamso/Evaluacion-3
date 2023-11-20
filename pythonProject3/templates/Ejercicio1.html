@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            text-align: center;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+    <form action="/calcular_promedio" method="post">
+        <label for="nota1">Nota 1 (10-70):</label>
+        <input type="number" name="nota1" id="nota1" min="10" max="70" required>
+
+        <label for="nota2">Nota 2 (10-70):</label>
+        <input type="number" name="nota2" id="nota2" min="10" max="70" required>
+
+        <label for="nota3">Nota 3 (10-70):</label>
+        <input type="number" name="nota3" id="nota3" min="10" max="70" required>
+
+        <label for="asistencia">Asistencia (0-100):</label>
+        <input type="number" name="asistencia" id="asistencia" min="0" max="100" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
